@@ -43,12 +43,10 @@ class ViewController: UIViewController {
 
 // MARK: - Private Method
 extension ViewController {
-    private func showAlert(title: String, message: String, textField: UITextField? = nil) {
+    private func showAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .default)
         present(alert, animated: true)
-        let okAction = UIAlertAction(title: "Ok", style: .default) { _ in
-            textField?.text = ""
-        }
         alert.addAction(okAction)
         present(alert, animated: true)
     }
