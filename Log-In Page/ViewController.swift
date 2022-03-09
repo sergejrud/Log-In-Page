@@ -25,9 +25,7 @@ class ViewController: UIViewController {
             showAlert(
                 title: "Access Denied",
                 message: "Please, enter correct login and password"
-//                textField: passwordTextField
             )
-//            return
         }
     }
     
